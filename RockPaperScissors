@@ -1,0 +1,40 @@
+rock=1
+papaer=2
+scissors=3
+playerOne=0
+playerTwo=0
+
+--PlayerInput
+write("Player one:\n\tChoose Rock(1), Paper(2), or Scissors(3): ")
+playerOne=read()
+write("Player two:\n\tChoose Rock(1), Paper(2), or Scissors(3): ")
+playerTwo=read()
+
+if playerOne==playerTwo then
+	print("It's a tie!")
+else
+--rock
+	if playerOne==rock then
+		if playerTwo==paper then
+			print("Player one won!")
+		else 
+			print("Player two won!")
+		end
+	end
+--paper
+	if playerOne==paper then
+		if playerTwo==scissors then
+			print("Player one won!")
+		else
+			print("Player two won!")
+		end
+	end
+--scissors
+	if playerOne==scissors then
+		if playerTwo==rock then
+			print("Player one won!")
+		else
+			print("Player two won!")
+		end
+	end
+end
